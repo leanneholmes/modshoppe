@@ -6,12 +6,14 @@ import { auth } from '../../firebase/firebase.utils';
 import CartIcon from '../cart-icon/cart-icon.component';
 import CartDropdown from '../cart-dropdown/cart-dropdown.component';
 
+import { ReactComponent as Logo } from '../../assets/crown.svg';
+
 import './header.styles.scss';
 
 const Header = ({ currentUser, hidden }) => (
   <div className='header'>
     <Link className='logo-container' to='/'>
-      MOD SHOPPE
+      <Logo className='logo' />
     </Link>
     <div className='options'>
       <Link className='option' to='/shop'>
